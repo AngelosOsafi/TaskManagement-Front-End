@@ -1,0 +1,19 @@
+.navbar {
+    font-family: 'Arial', sans-serif; /* Customize font */
+    padding: 10px 20px; /* Add some padding */
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #A100FF; /* Bootstrap primary color */
+    }
+  
+    .btn {
+     transition: background-color 0.3s ease;
+     color:#A100FF;
+     &:hover {
+        background-color: #A100FF; /* Darker success color */
+        color: #fff;
+        }
+    }
+} 
