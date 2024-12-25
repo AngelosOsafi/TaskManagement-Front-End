@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TaskCreateComponent } from './task-create.component'
 
-describe('TaskFormComponent', () => {
+describe('TaskCreateComponent', () => {
   let component: TaskCreateComponent;
   let fixture: ComponentFixture<TaskCreateComponent>;
 

@@ -1,6 +1,9 @@
 <nav class="navbar navbar-light bg-light sticky-top">
   <span class="navbar-brand">TaskManagementApp</span>
   <span class="form-inline">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="button">+ Add List</button>
+    <img class="homeButton" src="../../../assets/home.png" width="30" height="30" (click)="goToHome()">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="toggleForm()">+ Add List</button>
   </span>
 </nav>
+
+<app-task-create *ngIf="showForm"></app-task-create>

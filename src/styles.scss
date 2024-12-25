@@ -1,12 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 html, body {
-    height: 100%; /* Ensures the page fills the viewport height */
-    margin: 0;    /* Removes any default margin */
-  }
-  
-  #app-root {
-    display: flex;
-    flex-direction: column; /* Makes the root container a column */
-    min-height: 100vh;      /* Forces the container to be at least the viewport height */
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

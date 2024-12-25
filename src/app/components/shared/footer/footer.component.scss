@@ -1,28 +1,35 @@
 footer {
     background-color: #f8f9fa;
     border-top: 1px solid #e5e5e5;
-    margin: 0 !important;
-    padding: 0 20px; // Add horizontal padding
-}
-
-.btn {
-    margin: 0 0.5rem;
-    &:last-child {
-        margin-right: 0; // Remove margin from last button
-    }
-    
-    &.btn-linkedin {
-        background-color: #0082ca;
-        color: #fff;
-    }
-    
-    &.btn-github {
-        background-color: #333333;
-        color: #fff;
-    }
-}
-
-.social-links {
+    padding: 10px 20px;
+    margin: 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links {
     display: flex;
     align-items: center;
-}
+  }
+  
+  .btn {
+    margin: 0 0.5rem;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &.btn-linkedin {
+      background-color: #0082ca;
+      color: #fff;
+    }
+  
+    &.btn-github {
+      background-color: #333333;
+      color: #fff;
+    }
+  }
