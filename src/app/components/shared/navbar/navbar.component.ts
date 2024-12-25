@@ -13,9 +13,14 @@ import { AppComponent } from '../../../app.component';
 export class NavbarComponent {
   constructor(private router: Router, private appComponent: AppComponent) {}
 
+  toggleList() {
+    this.appComponent.hideLogo();
+    this.router.navigate(['/task-list']);
+  }
+
   toggleForm() {
     this.appComponent.hideLogo();
-    this.router.navigate(['/form']);
+    this.router.navigate(['/task-form']);
   }
 
   goToHome() {
