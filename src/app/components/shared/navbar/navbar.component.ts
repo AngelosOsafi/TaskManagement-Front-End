@@ -1,24 +1,25 @@
 import { Component } from '@angular/core';
-import { TaskCreateComponent } from '../../task-create/task-create.component';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { AppComponent } from '../../../app.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TaskCreateComponent, CommonModule],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  showForm: boolean = false;
+  constructor(private router: Router, private appComponent: AppComponent) {}
 
   toggleForm() {
-    this.showForm = !this.showForm;
+    this.appComponent.hideLogo();
+    this.router.navigate(['/form']);
   }
 
   goToHome() {
-    if (this.showForm) {
-      this.showForm = false;
-    }
+    this.appComponent.showLogo();
+    this.router.navigate(['/']);
   }
 }

@@ -6,7 +6,15 @@
 }
 
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   flex: 1;
+}
+
+.content img {
+  opacity: 0.5;
 }
 
 app-navbar {
