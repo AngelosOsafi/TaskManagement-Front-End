@@ -1,0 +1,30 @@
+<div class="content">
+    <div class="left-container">
+        <h1>TaskManagementApp</h1>
+        <p>Organize smarter, achieve more ✨</p>
+    </div>
+    <div class="form-container">
+      <form (ngSubmit)="login()">
+        <h3>Sign in</h3>
+        <div class="mb-3">
+          <input 
+            type="email" 
+            id="email" 
+            class="form-control" 
+            placeholder="Enter email"
+            [(ngModel)]="Login.email"
+            name="email" />
+        </div>
+        <div class="mb-3">
+          <input 
+            type="password" 
+            id="password"
+            class="form-control"
+            placeholder="Enter password"
+            [(ngModel)]="Login.password"
+            name="password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>

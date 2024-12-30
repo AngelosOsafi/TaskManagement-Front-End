@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { AppComponent } from '../../../app.component';
 
 @Component({
   selector: 'app-navbar',
@@ -11,20 +10,17 @@ import { AppComponent } from '../../../app.component';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private router: Router, private appComponent: AppComponent) {}
+  constructor(private router: Router) {}
 
   toggleList() {
-    this.appComponent.hideLogo();
-    this.router.navigate(['/task-list']);
+    this.router.navigate(['/homepage/task-list']);
   }
 
   toggleForm() {
-    this.appComponent.hideLogo();
-    this.router.navigate(['/task-form']);
+    this.router.navigate(['/homepage/task-form']);
   }
 
   goToHome() {
-    this.appComponent.showLogo();
-    this.router.navigate(['/']);
+    this.router.navigate(['/homepage']);
   }
 }

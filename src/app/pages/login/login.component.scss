@@ -1,0 +1,104 @@
+/* Variables */
+$primary-color: #A100FF;
+$hover-color: #791ab0;
+$font-color: #333;
+$container-padding: 20px;
+$border-radius: 10px;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$max-width: 500px;
+$form-max-width: 350px;
+$transition-duration: 0.3s;
+
+/* Main Container */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: $container-padding;
+  gap: 5vw;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    gap: 10vw;
+  }
+}
+
+/* Left Container */
+.left-container {
+  max-width: $max-width;
+  text-align: left;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 50px;
+    color: $primary-color;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 32px;
+    color: $font-color;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: $form-max-width;
+  padding: $container-padding;
+  background-color: #ffffff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  overflow: auto; /* Ensure content is scrollable if it exceeds container's height */
+
+  h3 {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+/* Button */
+.btn {
+  transition: background-color $transition-duration ease;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $hover-color;
+    color: #fff;
+  }
+}
+
+/* Form Control */
+.form-control {
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content {
+    height: auto;
+    min-height: 100vh; /* Ensure content takes up at least the full viewport height */
+  }
+  
+  .form-container {
+    width: 90%;
+  }
+}

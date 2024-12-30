@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f3e5ff;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+}
+
+.content img {
+    opacity: 0.5;
+}
